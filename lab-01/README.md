@@ -68,7 +68,7 @@ AI пайдаланушының мақсаты мен аллергиялық ш�
 
 NutriScan AI жүйесінің негізгі мүмкіндіктерін және пайдаланушы әрекеттерін құрылымдау үшін FUTUREMAP картасы құрылды.
 
-![NutriScan AI FUTUREMAP](images/futuremap.png)
+![NutriScan AI FUTUREMAP](images/Futuremap.png)
 
 ---
 
@@ -76,7 +76,7 @@ NutriScan AI жүйесінің негізгі мүмкіндіктерін жә
 
 Use Case диаграммасы NutriScan AI жүйесінің актерлері мен олардың жүйемен өзара әрекетін көрсетеді.
 
-![NutriScan AI Use Case](images/use-case.png)
+![NutriScan AI Use Case Diagram](images/use-case-diagram.png)
 
 ---
 
@@ -84,7 +84,7 @@ Use Case диаграммасы NutriScan AI жүйесінің актерлер
 
 Бизнес-процесс диаграммасы өнімді сканерлеу, деректер қорынан іздеу және AI арқылы талдау процесін көрсетеді.
 
-![NutriScan AI BPMN](images/bpmn.png)
+![NutriScan AI BPMN Process](images/bpmn-process.png)
 
 ---
 
