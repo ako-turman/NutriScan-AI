@@ -2,57 +2,57 @@
 
 **Personal Diet & Product Assistant**
 
-NutriScan AI — дұрыс тамақтануды бақылауға, күнделікті КБЖУ көрсеткіштерін есептеуге және дүкен өнімдерін талдауға арналған мобильді қосымша жобасы.
+NutriScan AI is a mobile application project designed to help users track their nutrition, calculate daily calorie and macronutrient intake, and analyze food products.
 
-Бұл репозиторийде NutriScan AI жобасының **Requirements Engineering** пәні бойынша семестр бойы орындалған зертханалық жұмыстары жинақталған.
+This repository contains the laboratory assignments completed throughout the semester for the **Requirements Engineering** course.
 
-Жоба әр зертханалық жұмыста кезең-кезеңімен дамытылады: пәндік аймақты анықтаудан бастап талаптарды құрылымдау, User Story, Acceptance Criteria және жүйелік модельдерді әзірлеуге дейін.
-
----
-
-## 🎯 Жобаның мақсаты
-
-Пайдаланушының жеке мақсаты, тамақтану көрсеткіштері және аллергиялық шектеулері негізінде тамақтануды бақылауға және өнімдерді таңдауға көмектесетін жүйені жобалау.
+The project evolves step by step with each assignment, from defining the problem domain to structuring requirements, writing User Stories and Acceptance Criteria, and developing system models.
 
 ---
 
-## 🧩 Негізгі мүмкіндіктер
+## 🎯 Project Goal
 
-- жеке КБЖУ нормасын есептеу;
-- тамақтану күнделігін жүргізу;
-- су мөлшерін бақылау;
-- өнімнің штрих-кодын сканерлеу;
-- өнім құрамын талдау;
-- AI негізінде жеке ұсыныс беру;
-- тағамдық аллергияларды ескеру;
-- базада жоқ өнімдерді қосу.
+To design a system that helps users monitor their nutrition and make informed food choices based on their personal goals, nutritional needs, and food allergies.
 
 ---
 
-## 📚 Зертханалық жұмыстар
+## 🧩 Key Features
 
-| № | Тақырып | Статус |
-|---|---|---|
-| [Lab 01](lab-01/) | Пәндік аймаққа шолу және Product Backlog | ✅ Дайын |
-| Lab 03 | Бағдарламалық қамсыздандырудың өмірлік цикл модельдері | 🔄 Өңделуде |
-| Lab 04 | Epic, Feature, User Story және Acceptance Criteria | 🔄 Өңделуде |
-
-> **Ескерту:** оқу бағдарламасында №2 зертханалық жұмыс болған жоқ.
+- Calculate personalized daily calorie and macronutrient targets;
+- Keep a food diary;
+- Track daily water intake;
+- Scan product barcodes;
+- Analyze product ingredients;
+- Provide AI-powered personalized recommendations;
+- Take food allergies into account;
+- Add products that are missing from the database.
 
 ---
 
-## 🛠 Қолданылған құралдар
+## 📚 Laboratory Assignments
+
+| Assignment | Topic | Status |
+| --- | --- | --- |
+| [Lab 01](https://github.com/ako-turman/NutriScan-AI/blob/main/lab-01) | Problem Domain Overview and Product Backlog | ✅ Completed |
+| Lab 03 | Software Development Life Cycle Models | 🔄 In Progress |
+| Lab 04 | Epics, Features, User Stories, and Acceptance Criteria | 🔄 In Progress |
+
+> **Note:** The course syllabus did not include Laboratory Assignment No. 2.
+
+---
+
+## 🛠 Tools and Methods
 
 - GitHub
 - Mermaid
 - UML
 - BPMN
-- Requirements Engineering әдістері
+- Requirements Engineering methods
 
 ---
 
-## 👩‍💻 Автор
+## 👩‍💻 Author
 
 **Akbota Turman**
 
-Software Engineering student
+Software Engineering Student
