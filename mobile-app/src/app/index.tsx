@@ -1,98 +1,125 @@
-import * as Device from 'expo-device';
-import { Platform, StyleSheet } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { AnimatedIcon } from '@/components/animated-icon';
-import { HintRow } from '@/components/hint-row';
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { WebBadge } from '@/components/web-badge';
-import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
-
-function getDevMenuHint() {
-  if (Platform.OS === 'web') {
-    return <ThemedText type="small">use browser devtools</ThemedText>;
-  }
-  if (Device.isDevice) {
-    return (
-      <ThemedText type="small">
-        shake device or press <ThemedText type="code">m</ThemedText> in terminal
-      </ThemedText>
-    );
-  }
-  const shortcut = Platform.OS === 'android' ? 'cmd+m (or ctrl+m)' : 'cmd+d';
-  return (
-    <ThemedText type="small">
-      press <ThemedText type="code">{shortcut}</ThemedText>
-    </ThemedText>
-  );
-}
+import { BottomTabInset } from '@/constants/theme';
 
 export default function HomeScreen() {
   return (
-    <ThemedView style={styles.container}>
-      <SafeAreaView style={styles.safeArea}>
-        <ThemedView style={styles.heroSection}>
-          <AnimatedIcon />
-          <ThemedText type="title" style={styles.title}>
-            Welcome to&nbsp;Expo
-          </ThemedText>
-        </ThemedView>
+    <SafeAreaView
+      style={styles.screen}
+      edges={['top', 'left', 'right']}
+    >
+      <ScrollView contentContainerStyle={styles.content}>
+        <View style={styles.logo}>
+          <Text style={styles.logoText}>NS</Text>
+        </View>
 
-        <ThemedText type="code" style={styles.code}>
-          get started
-        </ThemedText>
+        <Text style={styles.title}>NutriScan AI</Text>
 
-        <ThemedView type="backgroundElement" style={styles.stepContainer}>
-          <HintRow
-            title="Try editing"
-            hint={<ThemedText type="code">src/app/index.tsx</ThemedText>}
-          />
-          <HintRow title="Dev tools" hint={getDevMenuHint()} />
-          <HintRow
-            title="Fresh start"
-            hint={<ThemedText type="code">npm run reset-project</ThemedText>}
-          />
-        </ThemedView>
+        <Text style={styles.subtitle}>
+          Жеке тамақтану көмекшісі
+        </Text>
 
-        {Platform.OS === 'web' && <WebBadge />}
-      </SafeAreaView>
-    </ThemedView>
+        <Text style={styles.description}>
+          Тамақтануыңызды бақылап, өнімдерді жеке мақсатыңыз бен
+          тағамдық шектеулеріңізге сәйкес таңдаңыз.
+        </Text>
+
+        <Text style={styles.sectionTitle}>
+          Қосымша мүмкіндіктері
+        </Text>
+
+        <View style={styles.card}>
+          <Text style={styles.cardTitle}>Өнімді тексеру</Text>
+          <Text style={styles.cardText}>
+            Өнімнің құрамын, тағамдық құндылығын және
+            аллергендерін қарау.
+          </Text>
+        </View>
+
+        <View style={styles.card}>
+          <Text style={styles.cardTitle}>Тамақтану күнделігі</Text>
+          <Text style={styles.cardText}>
+            Күнделікті тағамдар мен ішілген су мөлшерін тіркеу.
+          </Text>
+        </View>
+
+        <View style={styles.card}>
+          <Text style={styles.cardTitle}>Жеке ұсыныстар</Text>
+          <Text style={styles.cardText}>
+            Тамақтану мақсатыңызға сәйкес AI-талдау алу.
+          </Text>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  screen: {
     flex: 1,
-    justifyContent: 'center',
-    flexDirection: 'row',
+    backgroundColor: '#F4F7F2',
   },
-  safeArea: {
-    flex: 1,
-    paddingHorizontal: Spacing.four,
-    alignItems: 'center',
-    gap: Spacing.three,
-    paddingBottom: BottomTabInset + Spacing.three,
-    maxWidth: MaxContentWidth,
+  content: {
+    width: '100%',
+    maxWidth: 600,
+    alignSelf: 'center',
+    paddingHorizontal: 24,
+    paddingTop: 28,
+    paddingBottom: BottomTabInset + 24,
   },
-  heroSection: {
-    alignItems: 'center',
+  logo: {
+    width: 72,
+    height: 72,
+    borderRadius: 24,
+    backgroundColor: '#246B4A',
     justifyContent: 'center',
-    flex: 1,
-    paddingHorizontal: Spacing.four,
-    gap: Spacing.four,
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  logoText: {
+    color: '#FFFFFF',
+    fontSize: 28,
+    fontWeight: '700',
   },
   title: {
-    textAlign: 'center',
+    color: '#183C2C',
+    fontSize: 34,
+    fontWeight: '700',
   },
-  code: {
-    textTransform: 'uppercase',
+  subtitle: {
+    color: '#246B4A',
+    fontSize: 18,
+    marginTop: 8,
   },
-  stepContainer: {
-    gap: Spacing.three,
-    alignSelf: 'stretch',
-    paddingHorizontal: Spacing.three,
-    paddingVertical: Spacing.four,
-    borderRadius: Spacing.four,
+  description: {
+    color: '#52645A',
+    fontSize: 16,
+    lineHeight: 25,
+    marginTop: 18,
+  },
+  sectionTitle: {
+    color: '#183C2C',
+    fontSize: 20,
+    fontWeight: '600',
+    marginTop: 32,
+    marginBottom: 16,
+  },
+  card: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 18,
+    padding: 20,
+    marginBottom: 12,
+  },
+  cardTitle: {
+    color: '#183C2C',
+    fontSize: 18,
+    fontWeight: '600',
+  },
+  cardText: {
+    color: '#52645A',
+    fontSize: 15,
+    lineHeight: 23,
+    marginTop: 8,
   },
 });
