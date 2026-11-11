@@ -1,44 +1,58 @@
- NutriScan AI: Personal Diet & Product Assistant 
- NutriScan AI — пайдаланушының жеке дене бітімі мен денсаулық мақсаттарына сәйкес КБЖУ нормасын есептейтін, тамақтану күнделігін жүргізетін және штрих-код сканері мен AI арқылы өнімдерді талдайтын мобильді қосымшаның системдік документациясы.
+# NutriScan AI
 
+**Personal Diet & Product Assistant**
 
- Жоба сипаттамасы
-Салауатты өмір салтын ұстанатын, диета ұстайтын немесе тағамдық аллергиясы бар адамдарға арналған мобильді қосымша.
+NutriScan AI is a mobile application project designed to help users track their nutrition, calculate daily calorie and macronutrient intake, and analyze food products.
 
-Негізгі модульдер:
-- Жеке КБЖУ жоспары: Пайдаланушының параметрін ескере отырып, күнделікті калория нормасын автоматты түрде есептеу.
-- Штрих-код сканері және AI Талдау: Өнім штрих-кодын 1 секундта сканерлеу және AI арқылы оның құрамы мен аллергендерін талдау.
-- Food Diary (Тамақтану күнделігі): Тұтынған тағамдарды, ішілген су мөлшерін және калория балансын бақылау.
+This repository contains the laboratory assignments completed throughout the semester for the **Requirements Engineering** course.
 
+The project evolves step by step with each assignment, from defining the problem domain to structuring requirements, writing User Stories and Acceptance Criteria, and developing system models.
 
- Жүйе актерлері (System Actors)
-- Тіркелмеген пайдаланушы: Мүмкіндіктермен танысу, тіркелу (Email, Google, Apple ID)[cite: 1].
-- Тіркелген пайдаланушы: Профиль баптау, өнімді сканерлеу, AI талдауын алу, күнделік жүргізу[cite: 1].
-- Администратор: Өнімдер базасын модерациялау, аллергендер анықтамалығын және AI логикасын реттеу[cite: 1].
+---
 
+## 🎯 Project Goal
 
+To design a system that helps users monitor their nutrition and make informed food choices based on their personal goals, nutritional needs, and food allergies.
 
-1. User Story Map (FutureMap)
-![User Story Map](./futuremap.png)
+---
 
-2. UML Use Case Диаграммасы
-![Use Case Diagram](./use-case.png)
+## 🧩 Key Features
 
-3. BPMN 2.0 Бизнес-процесс картасы
-![BPMN Process](./bpmn.png)
+- Calculate personalized daily calorie and macronutrient targets;
+- Keep a food diary;
+- Track daily water intake;
+- Scan product barcodes;
+- Analyze product ingredients;
+- Provide AI-powered personalized recommendations;
+- Take food allergies into account;
+- Add products that are missing from the database.
 
+---
 
+## 📚 Laboratory Assignments
 
-Жүйеге қойылатын талаптар
+| Assignment | Topic | Status |
+| --- | --- | --- |
+| [Lab 01](https://github.com/ako-turman/NutriScan-AI/blob/main/lab-01) | Problem Domain Overview and Product Backlog | ✅ Completed |
+| Lab 03 | Software Development Life Cycle Models | 🔄 In Progress |
+| Lab 04 | Epics, Features, User Stories, and Acceptance Criteria | 🔄 In Progress |
 
- Функционалдық талаптар (FR)
-- FR-1: Тәуліктік КБЖУ нормасын автоматты есептеу.
-- FR-2: Штрих-кодты 1 секунд ішінде сканерлеу.
-- FR-3: AI арқылы өнім құрамындағы аллергендерді (лактоза, глютен, жаңғақ т.б.) анықтау.
-- FR-4: Тамақтану мен су күнделігін жүргізу және прогресті графикте көрсету.
+> **Note:** The course syllabus did not include Laboratory Assignment No. 2.
 
-Функционалдық емес талаптар (NFR)
-- NFR-1 (Өнімділік): Сканерлеу мен AI жауабының уақыты 3 секундтан аспауы тиіс.
-- NFR-2 (Қауіпсіздік): Деректерді шифрлау (HTTPS/SSL, AES-256).
-- NFR-3 (Сенімділік): Жүйенің үздіксіз жұмысы (Uptime) кемінде 99.5%.
-- NFR-4 (Қолайлылық): Кез келген әрекет 3 басудан (clicks) аспауы тиіс.
+---
+
+## 🛠 Tools and Methods
+
+- GitHub
+- Mermaid
+- UML
+- BPMN
+- Requirements Engineering methods
+
+---
+
+## 👩‍💻 Author
+
+**Akbota Turman**
+
+Software Engineering Student
